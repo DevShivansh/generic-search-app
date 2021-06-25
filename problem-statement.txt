@@ -1,0 +1,83 @@
+-------------
+Problem Statement:
+
+Design an in-memory library that facilitates searching on any kind of Items.
+
+You are given a bunch of Products with some attributes, like id, name, title, description and price
+
+Implement a search functionality on these indexed products.
+
+There is no hard constraint on the attributes - you can choose any number of attributes > 2 (minimum 1 integer, and 1 string). You can assume that all products being indexed will have the same attributes.
+
+
+
+Sample product attributes:
+ 
+{
+
+"product": "id1",
+
+"category": "book",
+
+"subCategory": "education",
+
+"price": 200,
+
+“title”: "Pedagogy of the Oppressed”,
+
+“author”: “Paulo Freire”,
+
+“description”: Is a book written by Brazilian educator Paulo Freire, first written in Portuguese in 1968...”,
+
+"size": 10
+
+}
+
+ 
+
+Requirements P0:
+
+ 
+Indexing products: Interfaces for Indexing products, with some simple form of parsing/tokenization for understanding each attribute
+
+Retrieving products: Interfaces for taking in a filter search request, and return ids of matching products. Response must be top 10 matching products (paginated)
+
+Others: Right models for Products, Query Requests
+
+
+Requirements P1:
+
+Ability to express a complicated boolean query, for retrieving results
+
+Eg: (category == ‘book’ AND subCategory == ‘education’) OR (category == ‘toys’)
+
+Constraints:
+
+ 
+
+You are NOT allowed to use any database,
+
+only simple in-memory data structures allowed
+
+You are NOT allowed to use any third party libraries for search
+
+You are NOT required to have a full-fledged web service or APIs exposed
+
+Just a main class that simulates the above operations is enough
+
+How you will be evaluated
+
+ 
+
+Separation of concerns
+
+Abstractions
+
+Application of OO design principles
+
+Testability
+
+Code readability
+
+Language proficiency
+------------- 
